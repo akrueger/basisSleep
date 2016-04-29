@@ -1,0 +1,16 @@
+{
+  "name": "basis-sleep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mashJSON.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Krueger",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "dive": "^0.4.0",
+    "graceful-fs": "^4.1.2"
+  }
+}

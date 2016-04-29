@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+  
+  <div>
+  <h1><title>BasisRetriever</title>
+  
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <style type="text/css"><!--body {background-color:#bcb}
+div.sectionedit { text-align:right;font-size:smaller;clear:both;}
+
+span.anchor {
+	float: left;
+	font-size: 10px;
+	margin-left: -10px;
+	width: 10px;
+    position:relative; top:-0.1em;
+	text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-20px; list-style: none; }
+ol.toc ol.toc { text-indent:-40px; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px; padding-bottom: 5px; 
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-13px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller; 
+    padding: 5px; border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    margin-top:-5px;   padding-top: 5px;
+    margin-left:-5px;  padding-left: 5px;
+    margin-right:-5px; padding-right: 5px;
+    padding-bottom: 3px;
+    border-bottom:  1px dotted #cccccc; }.apprlink { font-size:smaller; }.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>
+  </h1>
+  </div>
+
+  
+  <script type="text/javascript">
+function toggle(obj) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML = "hide";
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML = "show";
+    }
+}
+  </script>
+  
+  <meta name="robots" content="index,follow" />
+
+</head><body>
+<table id="wikimid" cellpadding="0" cellspacing="0" width="100%">
+
+  <tbody>
+    <tr>
+<!--PageText-->
+<h1>Basis Retriever</h1>
+      <div id="wikitext">
+      <p><span style="font-size: 120%;">Retrieve the biometrics data
+from your Basis Peak or Basis B1 Band fitness watch.</span> </p>
+      
+      <p class="vspace">What it does: Retrieves the biometric data you
+recorded on your Basis B1 or Basis Peak fitness watch (which Basis
+automatically uploads to their servers at app.mybasis.com) and stores
+it on your hard drive in csv format. </p>
+      <p class="vspace"><a class="urllink" href="https://sourceforge.net/projects/basisretriever/" rel="nofollow">Project
+page (Sourceforge)</a> BasisRetriever is a portable application. Just <a class="urllink" href="http://sourceforge.net/projects/basisretriever/files" rel="nofollow">download</a> and extract the zip file to wherever you
+please. </p>
+      <p class="vspace">To browse and graph your downloaded Basis data,
+also see the <a class="urllink" href="http://richk.net/wiki/BasisViewer/" rel="nofollow">Basis Viewer</a>
+application, also <a class="urllink" href="https://sourceforge.net/projects/basisviewer/" rel="nofollow">on
+Sourceforge</a>. </p>
+      <div class="vspace">
+      <div><img src="http://richk.net/img/basis_retr0.5/quickstart.png" alt="Basis Retriever quick introduction" title="Basis Retriever quick introduction" /></div>
+      <div class="vspace">
+      <div class="sectionedit"><a name="sBasisRetriever.BasisRetriever_1" /><a href="http://www.richk.net/wiki/BasisRetriever/BasisRetriever?action=edit&amp;s=1&amp;auto=y&amp;from=BasisRetriever.BasisRetriever">Edit&#8595;</a></div>
+      <h3 style="margin-top: 0px;"> Detailed instructions-- First
+launching BasisRetriever:</h3>
+      <p>To run (Windows): In the install folder, go into the <code>app</code>
+subfolder, doubleclick on <code>BasisRetriever.exe</code> </p>
+      <p class="vspace">To run (OS-X or Linux): In the install folder,
+bring up a terminal window, cd to the ./src folder, and type </p>
+      <pre> <code>python BasisRetriever.py</code>.<br /></pre>
+      <p class="vspace">When launched, the following window is shown: </p>
+      <div class="vspace">
+      <div><img src="http://richk.net/img/basis_retr0.5/ui_on_launch_sm.png" alt="Basis Retriever starting screen" title="Basis Retriever starting screen" /></div>
+      <div class="vspace">
+      
+      
+      <h3 style="margin-top: 0px;"><br />
+ Using the program:</h3>
+
+      <ol>
+        <li>Select a directory for saving files (top row of the
+display), the display will change to this: </li>
+      </ol>
+      <div class="vspace">
+      <div> <img src="http://richk.net/img/basis_retr0.5/app_overview_sm.png" alt="Basis Retriever starting screen" title="Basis Retriever starting screen" /></div>
+      <div class="vspace">
+      <ol>
+        <li><strong>Enter your info:</strong> In the second row on the
+top, enter your basis website login id (email) and password.
+          <ul>
+            <li>Click the "save" checkbox to save your password each
+time you run BasisRetriever.* </li>
+          </ul>
+        </li>
+        <li><strong>Choose a month:</strong> Select a year and month on
+the left side of the window.
+          <ul>
+            <li>Note: dates in the future are shown in gray; no
+download is possible. </li>
+          </ul>
+        </li>
+        <li><strong>Download data for a particular day:</strong> Click
+a "metrics <em>nn</em>" button to download your data for a particular
+day.
+          <ul>
+            <li>Once downloaded, the number to the left of the download
+button is the file size in bytes. </li>
+            <li>If the 'Activity type into metrics' button is checked,
+the metrics file will also include sleep and activity data. If
+unchecked, you'll also have a button for each day ("sleep <em>nn</em>")
+to download a file with the day's sleep data. </li>
+            <li>If the entire day's worth of data was downloaded, the
+file size link will look like a <strong><span style="color: blue;">blue
+text</span></strong> hyperlink. </li>
+            <li>If the file was downloaded but you hadn't yet uploaded
+the entire day from your watch, the link will be in <strong><span style="color: rgb(255, 136, 0);">orange text</span></strong>. </li>
+          </ul>
+        </li>
+        <li><strong>Download summary data:</strong> You can also
+download summary data for activities and sleep for an entire month. On
+the second row, below the password entry box, click one of the two
+buttons to download. File naming:
+          <ul>
+            <li>Activity summary for month: <code>YYYY-MM_basis_activities_summary.csv</code>
+            </li>
+            <li>Sleep Summary for month: <code>YYYY-MM_basis_sleep_summary.csv</code>
+            </li>
+            <li><em>Note:</em> In order to get a complete summary, do
+this after the month is over. </li>
+          </ul>
+        </li>
+        <li><strong>View your data:</strong> I created the BasisViewer
+app (<a class="urllink" href="https://sourceforge.net/projects/basisviewer/" rel="nofollow">homepage
+and download</a>) to make it easy to browse and graph your data. </li>
+        <li><strong>Sync Button:</strong> You can also have
+BasisRetriever automatically synchronize your data from the basis
+website. Click the "Sync" button to download your data for any missing
+days. The application is configured to go back 30 days, but you can
+change that; see the <code>BasisRetriever.cfg</code> file. </li>
+<li><strong><em>Override Cache</em></strong> <strong>Option</strong>: For normal use, it doesn't matter if this is checked or unchecked.  If unchecked, you have already downloaded data for a particular day, and press a "metrics <em>nn</em>" button again, BasisRetriever will use cached json data (see below) to recreate the csv file.  If 'Override Cache' is checked, it will download new json files each time.
+</li>      </ol>
+      <div class="vspace">
+      
+      <h3 style="margin-top: 0px;"><br />
+File storage and naming:</h3>
+      <p>Click the 'CSV Dir' link to open up the folder containing the
+csv files in your system's file viewer. </p>
+      <div class="vspace">
+      <ul>
+        <li>Name of metrics file is <code>YYYY-MM-DD_basis_metrics.csv</code>
+        </li>
+        <li>Name of summary files are <code>YYYY-MM_basis_sleep_summary.csv</code>
+and <code>YYYY-MM_basis_activities_summary.csv</code>. </li>
+      </ul>
+      <p class="vspace">In order to create the csv files,
+BasisRetriever downloads "json"-formatted files from the basis website.
+These are stored in the <code>json</code> subdirectory of the CSV
+directory. </p>
+      <div class="vspace">
+      <ul>
+        <li>You can change the json directory-- see the <code>BasisRetriever.cfg</code>
+file in the app subdirectory. </li>
+        <li>Once the csv file is created (plus the monthly summary
+files) you can delete the associated json files. </li>
+      </ul>
+      <div class="vspace">
+      <hr />
+      <p class="vspace">* <strong><em>Important Note</em></strong>: </p>
+      <ul>
+        <li>Clicking the "Save" checkbox next to the password encodes
+your password and saves it in your BasisRetriever program directory. </li>
+        <li>Your password is encoded but IT IS NOT ENCRYPTED-- it can
+easily be decoded. </li>
+        <li>If this is a concern to you, do not check "Save" and enter
+your password each time you run this program. </li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </tr>  </tbody>
+</table>
+
+</body></html>
